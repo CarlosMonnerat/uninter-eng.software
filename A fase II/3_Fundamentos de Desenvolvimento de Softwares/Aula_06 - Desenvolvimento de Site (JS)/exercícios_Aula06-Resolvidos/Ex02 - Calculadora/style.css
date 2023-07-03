@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+    height: 5%;
+    margin: 20px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: darkgray;
+    cursor: pointer;    
+}
+.btn:hover{
+    background-color: rgb(67, 65, 65);
+    color: white;
+}
+.resposta{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 10%;
+    border-radius: 10px;
+}
