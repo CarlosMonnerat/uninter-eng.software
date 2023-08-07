@@ -1,0 +1,44 @@
+Instalação JDK
+https://ninite.com/
+/usr/lib/jvm/java-8-openjdk-amd64
+
+Configurar .bashrc (/home/usuáriio/.bashrc) CTRL+H
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+export PATH=$JAVA_HOME/bin:/usr/bin
+export CLASSPATH=/home/usuario/mujava/mujava.jar:/home/usuario/mujava/openjava.jar:/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar
+
+source ~/.bashrc
+
+Criar diretórios
+/home/usuario/mujava/GeraMutante V4
+/home/usuario/mujava/MataMutante V3
+
+
+Comando gerar estrutura
+comando gerar mutantes
+comando matar mutantes
+
+=======================================================
+
+CONFIGURAÇÃO VARIÁVEIS DE AMBIENTE WINDOWS
+
+JAVA_HOME
+C:\Program Files\Java\jdk1.8.0_191
+
+Path (Adicionar)
+%JAVA_HOME%\bin
+
+MUJAVA_PATH
+C:\mujava
+
+MUJAVA_JAR
+C:\mujava\mujava.jar
+
+OPENJAVA_JAR
+C:\mujava\openjava.jar
+
+MUJAVA_CLASSES
+C:\mujava\classes
+
+CLASSPATH
+;%JAVA_HOME%\lib\tools.jar;%MUJAVA_CLASSES%;%MUJAVA_JAR%;%MUJAVA_PATH%;%OPENJAVA_JAR%;
