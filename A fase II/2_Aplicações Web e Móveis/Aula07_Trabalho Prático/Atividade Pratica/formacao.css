@@ -12,8 +12,7 @@
     background-color: white;
     justify-content: center;
     align-items: center;
-    /* position: fixed; Ao fixar a barra de menu as configurações de tamanho ficarão desregulada...*/
-    width: 100%; /*...Por isso é necessário informar que a largura será de 100% da tela*/
+    width: 100%; /*A largura será de 100% da tela*/
 }
 .logo{
     flex: 20%;
@@ -67,7 +66,8 @@
     position: absolute;
     top: 19%;
     left: 15%;
-    max-width: 300px;  
+    max-width: 300px;
+    cursor: pointer;
 }
 .card_img:hover{
     background-color: #573d70;
@@ -131,4 +131,9 @@ footer{
     justify-content: center;
     margin: 10px;
     margin-bottom: 20px;
+}
+
+footer .rede_sociais a img:hover{
+    background-color: #b3b8cd;
+    border-radius: 20%;
 }
