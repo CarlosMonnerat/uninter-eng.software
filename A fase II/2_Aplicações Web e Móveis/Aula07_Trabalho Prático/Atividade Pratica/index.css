@@ -19,20 +19,20 @@
     flex: 20%;
     margin-left: 5%;
     text-align: left;
-    /* border: 1px solid red; */
 }
 
 .logo h1{
     font-family: 'Lobster', cursive;
     color: #180f4a;
     font-size: 24px;
-
 }
+
 .menu{
     flex: 70%;
     text-align: right;
     padding: 20px;
 }
+
 .menu a{
     color: #362b41;
     text-decoration: none;
@@ -42,11 +42,10 @@
     text-transform: uppercase;
 }
 
-.menu a:hover{
+.menu a:hover{ /* Hover é ativado quando o mouse passa por cima do ícone */
     color:#573d70;
     font-size: 15px;
-    border-top: 4px solid #573d70;
-    
+    border-top: 4px solid #573d70;    
 }
 
 .container{
@@ -55,8 +54,7 @@
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 2%;
-    
+    padding-top: 2%;   
 }
 
 .card_img{
@@ -66,13 +64,13 @@
     color: #b3b8cd;
     padding: 0.5%;
     position: relative;
-    max-width: 300px;
-   
+    max-width: 300px;   
 }
 .card_img:hover{
     background-color: #573d70;
     padding: 0.7%;
 }
+
 .card_img img{
     width: 100%;
 }
@@ -109,8 +107,8 @@
     padding: 10px 25px;
     margin: 0px 15px;
     box-shadow: 3px 2px 3px 2px #0000297f;
-
 }
+
 .container .buttons .btn:hover{
     background-color: #573d70;
     font-size: 16px;
