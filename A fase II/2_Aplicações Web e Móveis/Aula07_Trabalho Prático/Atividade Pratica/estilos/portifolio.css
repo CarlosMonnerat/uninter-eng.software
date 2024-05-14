@@ -82,9 +82,36 @@ p{
     border-radius: 5%;
     width: 600px;
     height: 300px;
-    margin: 10px;
+    margin: 20px;
+    margin-top: 20px;
     background-color: #3e2e4e;
     box-shadow: 0px 0px 20px 0px #00002975;
+    cursor: pointer;
+}
+
+.pag:hover{
+    width: 620px;
+    height: 320px;
+}
+
+.loopstudios{
+    background-image:url(/img/loopstudio.png);
+    background-size: cover;
+}
+
+.agencia_fake{
+    background-image:url(/img/agencia_fake.png);
+    background-size: cover;
+}
+
+.cordel{
+    background-image:url(/img/cordel.png);
+    background-size: cover;
+}
+
+.redes_sociais{
+    background-image:url(/img/redes_sociais.png);
+    background-size: cover;
 }
 
 footer{
