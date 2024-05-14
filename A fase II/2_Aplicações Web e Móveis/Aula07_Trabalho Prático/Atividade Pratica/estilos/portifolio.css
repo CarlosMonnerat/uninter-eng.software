@@ -78,7 +78,6 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid blue;
     border-radius: 5%;
     width: 600px;
     height: 300px;
@@ -90,8 +89,9 @@ p{
 }
 
 .pag:hover{
-    width: 620px;
-    height: 320px;
+    width: 605px;
+    height: 305px;
+    border: 5px solid #845ca9;
 }
 
 .loopstudios{
