@@ -72,6 +72,7 @@
 .card_img:hover{
     background-color: #573d70;
     padding: 0.7%;
+    cursor: cell;
 }
 
 .card_img img{
@@ -84,11 +85,10 @@
     border-radius: 50%;
 }
 
-.container h1{
+.banner img{
     position: absolute;
-    top: 20%;
-    right: 30%;
-    color: rgb(168, 163, 163);
+    top: 10%;
+    right: 20%;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
 }

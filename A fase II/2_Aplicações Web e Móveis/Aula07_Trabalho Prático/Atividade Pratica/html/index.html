@@ -12,10 +12,10 @@
             <h1>Perfil Pessoal</h1>
         </div>
         <div class="menu">
-            <a href="#" title="item 1">Sobre mim</a>
-            <a href="#" title="item 2">Formação</a>
-            <a href="#" title="item 3">Portifólio</a>
-            <a href="#" title="item 4">Contato</a>
+            <a href="/html/index.html" title="item 1">Sobre mim</a>
+            <a href="/html/formacao.html" title="item 2">Formação</a>
+            <a href="/html/portifolio.html" title="item 3">Portifólio</a>
+            <a href="/html/contato.html" title="item 4">Contato</a>
         </div>
     </nav>
         <main class="container">
@@ -27,8 +27,8 @@
            <h2>Estudante de Engenharia de Software</h2>
 
            <div class="buttons">
-                <button class="btn">Formação</button>
-                <button class="btn">Portifólio</button>
+                <button id="btn_1" class="btn">Formação</button>
+                <button id="btn_2" class="btn">Portifólio</button>
            </div>
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ipsam, fugiat sint distinctio quidem consequatur dolores ut cumque nemo laboriosam! Quia in minima dolor id, reprehenderit doloribus quidem velit harum?
@@ -43,4 +43,12 @@
         </main>
     
 </body>
+    <script>
+        document.getElementById("btn_1").onclick=function(){
+            window.location.href='/html/formacao.html';
+        }
+        document.getElementById("btn_2").onclick=function(){
+            window.location.href='/html/portifolio.html';
+        }
+    </script>
 </html>

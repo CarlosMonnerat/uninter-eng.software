@@ -164,7 +164,7 @@ fieldset.grupo .campo {
 
 /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
 .botao:hover {
-    background: #CCBBFF;
+    background: #b3b8cd;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }

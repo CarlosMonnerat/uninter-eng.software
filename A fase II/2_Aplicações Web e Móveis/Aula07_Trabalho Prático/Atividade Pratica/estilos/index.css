@@ -12,7 +12,6 @@
     background-color: white;
     justify-content: center;
     align-items: center;
-    /* position: fixed; Ao fixar a barra de menu as configurações de tamanho ficarão desregulada...*/
     width: 100%; /*...Por isso é necessário informar que a largura será de 100% da tela*/
 }
 .logo{
@@ -69,6 +68,7 @@
 .card_img:hover{
     background-color: #573d70;
     padding: 0.7%;
+    cursor: cell;
 }
 
 .card_img img{
@@ -98,7 +98,7 @@
 }
 
 .container .buttons .btn{
-    background-color: #3f1863;
+    background-color: #573d70;
     outline: none;
     border-radius: 7px;
     color: rgb(196, 189, 189);
@@ -109,8 +109,12 @@
     box-shadow: 3px 2px 3px 2px #0000297f;
 }
 
+.btn{
+    cursor: pointer;
+}
+
 .container .buttons .btn:hover{
-    background-color: #573d70;
+    background-color: #8965aa;
     font-size: 16px;
 }
 
