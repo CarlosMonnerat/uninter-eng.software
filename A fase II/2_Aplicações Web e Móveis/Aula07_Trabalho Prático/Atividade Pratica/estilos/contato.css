@@ -1,10 +1,12 @@
+            /* Configurações iniciais da página */
 *{
-    box-sizing: border-box; /*Incorpora 'margins', 'paddings' etc tudo dentro de uma caixa */
+    box-sizing: border-box; 
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
+            /* Barra de navegação */
 .navbar{
     display: flex;
     flex-flow: row wrap;
@@ -46,6 +48,8 @@
     font-size: 15px;
     border-top: 4px solid #573d70;    
 }
+
+            /* Conteúdo Pincipal */
 main{
     background-color: #362b41;
     display: flex;
@@ -54,8 +58,6 @@ main{
     height: 100vh;
     flex-direction: column;
 }
-
-/* Elemento de tag <body> */
 .container{
     background-color: #573d70;
     font-family: sans-serif;
@@ -70,7 +72,6 @@ main{
     box-shadow: 0px 0px 20px 0px #000029b5;
 }
 
-/* Elementos com o ID "titulo" */
 .titulo {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
@@ -79,7 +80,6 @@ main{
     text-transform: uppercase;
 } 
 
-/* Elementos com o ID "subtitulo" */
 .subtitulo {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
@@ -88,7 +88,6 @@ main{
     margin-top: 5px;
 } 
 
-/* Elementos de tag <fieldset>*/
 fieldset {
     border: 0;
 }
@@ -144,7 +143,6 @@ fieldset.grupo .campo {
     margin-right: 1em;
 }
 
-/* Elemento de classe "botao" */
 .botao{
     font-size: 1.2em;
     background: #59429d;
@@ -174,11 +172,11 @@ fieldset.grupo .campo {
     cursor: pointer;
 }
 
+            /* Rodapé com as redes sociais */
 footer{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-        
+    margin-top: 30px;        
 }
 
 footer .rede_sociais a img:hover{
