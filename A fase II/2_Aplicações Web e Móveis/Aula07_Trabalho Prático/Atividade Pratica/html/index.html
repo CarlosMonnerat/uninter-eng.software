@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Sobre Mim</title>
     <link rel="stylesheet" href="/estilos/index.css">
+    <title>Home - Sobre Mim</title>    
 </head>
 <body>
+    <!-- Barra de navegação -->
     <nav class="navbar">
         <div class="logo">
             <h1>Perfil Pessoal</h1>
@@ -18,22 +19,29 @@
             <a href="/html/contato.html" title="item 4">Contato</a>
         </div>
     </nav>
+    <!-- inicio do conteúdo principal -->
         <main class="container">
+            <!-- foto de perfil -->
            <div class="card_img">
                 <img class="foto" src="/img/perfil.jpeg" alt="foto de perfil">
            </div>
-           
+
+           <!-- nome e qualificação -->
            <h1>Carlos H. Monnerat</h1>
            <h2>Estudante de Engenharia de Software</h2>
 
+           <!-- botões de auxílio -->
            <div class="buttons">
                 <button id="btn_1" class="btn">Formação</button>
                 <button id="btn_2" class="btn">Portifólio</button>
            </div>
+
+           <!-- texto de apresentação -->
            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ipsam, fugiat sint distinctio quidem consequatur dolores ut cumque nemo laboriosam! Quia in minima dolor id, reprehenderit doloribus quidem velit harum?
+            Estudande de Física e Engenharia de Software. Possuo uma breve experiência com HTML, CSS, Javascript, Python e atualmente sigo iniciando meus estudos com React. Estou iniciando na área do Frontend, mas pretendo futuramente me tornar um desenvolvedor Fullstack. Também tenho um canal no youtube chamado "Me Mostre" que trata sobre curiosidades diversas e dedico ao menos uma hora por dia para treinos de breaking, uma nova modalidade olímpica que pratico há 5 anos.
            </p>
-            
+
+           <!-- redes sociais -->
            <div class="rede_sociais">
                 <a href="#"><img src="/img/facebook.png" alt="logo do facebook"></a>
                 <a href="#"><img src="/img/github.png" alt="logo do github"></a>
@@ -43,6 +51,7 @@
         </main>
     
 </body>
+    <!-- javascript básico dos botões de auxílio  -->
     <script>
         document.getElementById("btn_1").onclick=function(){
             window.location.href='/html/formacao.html';
