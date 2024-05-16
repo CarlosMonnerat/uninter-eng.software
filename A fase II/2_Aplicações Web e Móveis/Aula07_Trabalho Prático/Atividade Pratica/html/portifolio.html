@@ -7,6 +7,7 @@
     <title>Portifólio</title>
 </head>
 <body>
+    <!-- Barra de navegação -->
     <nav class="navbar">
         <div class="logo">
             <h1>Perfil Pessoal</h1>
@@ -18,24 +19,21 @@
             <a href="/html/contato.html" title="item 4">Contato</a>
         </div>
     </nav>
+
+    <!-- inicio do conteúdo principal -->
     <main>
         <section class="titulo">
             <h1>Portifólio</h1>
         </section>
         <section class="paginas">
-            <div  id="loopstudios" class="loopstudios pag">
-                
-            </div>
-            <div id="agencia_fake" class="agencia_fake pag">
-                
-            </div>
-            <div id="cordel" class="cordel pag">
-                
-            </div>
-            <div id="redes_sociais" class="redes_sociais pag">
-                
-            </div>
+            <!-- Amostra dos trabalhos -->
+            <div  id="loopstudios" class="loopstudios pag"></div>
+            <div id="agencia_fake" class="agencia_fake pag"></div>
+            <div id="cordel" class="cordel pag"></div>
+            <div id="redes_sociais" class="redes_sociais pag"></div>
         </section>
+
+        <!-- redes sociais -->
         <footer>
             <div class="rede_sociais">
                 <a href="#"><img src="/img/facebook.png" alt="logo do facebook"></a>
@@ -46,6 +44,8 @@
         </footer>      
     </main>
 </body>
+
+<!-- javascript que leva para os sites do portifólio -->
 <script>
     document.getElementById("loopstudios").onclick=function(){
         window.location.href='https://carlosmonnerat.github.io/loopstudios/';
