@@ -1,10 +1,12 @@
+            /* Configurações iniciais da página */
 *{
-    box-sizing: border-box; /*Incorpora 'margins', 'paddings' etc tudo dentro de uma caixa */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
+            /* Barra de navegação */
 .navbar{
     display: flex;
     flex-flow: row wrap;
@@ -47,6 +49,7 @@
     border-top: 4px solid #573d70;    
 }
 
+            /* Conteúdo Pincipal */
 main{
     display: flex;
     align-items: center;
@@ -114,11 +117,12 @@ p{
     background-size: cover;
 }
 
+
+            /* Rodapé com as redes sociais */
 footer{
     display: flex;
     justify-content: center;
-    margin: 40px 0px 10px 0px;
-    
+    margin: 40px 0px 10px 0px;    
 }
 
 footer .rede_sociais a img:hover{

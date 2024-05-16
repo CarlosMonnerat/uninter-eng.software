@@ -1,10 +1,12 @@
+            /* Configurações iniciais da página */
 *{
-    box-sizing: border-box; /*Incorpora 'margins', 'paddings' etc tudo dentro de uma caixa */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
+            /* Barra de navegação */
 .navbar{
     display: flex;
     flex-flow: row wrap;
@@ -12,7 +14,7 @@
     background-color: white;
     justify-content: center;
     align-items: center;
-    width: 100%; /*...Por isso é necessário informar que a largura será de 100% da tela*/
+    width: 100%;
 }
 .logo{
     flex: 20%;
@@ -47,6 +49,7 @@
     border-top: 4px solid #573d70;    
 }
 
+            /* Conteúdo Pincipal */
 .container{
     background-color: #362b41;
     display: flex;
@@ -126,6 +129,7 @@
     width: 40%;
 }
 
+            /* Redes Sociais */
 .container .rede_sociais{
     text-align: center;
     margin-top: 3%;

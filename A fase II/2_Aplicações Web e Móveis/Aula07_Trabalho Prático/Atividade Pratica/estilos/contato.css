@@ -157,19 +157,14 @@ fieldset.grupo .campo {
     position: relative;
     top: 90%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
-/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
 .botao:hover {
     background: #b3b8cd;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
-}
-
-/* Elementos de classe botão e de tag <select> */
-.botao, select{
-    cursor: pointer;
 }
 
             /* Rodapé com as redes sociais */
