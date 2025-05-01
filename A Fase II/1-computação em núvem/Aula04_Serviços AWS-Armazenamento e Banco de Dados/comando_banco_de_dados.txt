@@ -1,0 +1,11 @@
+1) CONECTAR NO BANCO DE DADOS
+mysql -u root -p
+2) CRIAR DATABASE
+create database sample;
+3) CRIAR USUARIO
+ CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'senha';
+4) DAR PERMISSAO
+ GRANT ALL PRIVILEGES ON * . * TO 'usuario'@'localhost';
+NOTA: Usar o tipo de permissão ALL PRIVILEGES (TODOS OS PRIVILÉGIOS) 
+5) Para que as mudanças tenham efeito, execute imediatamente um flush dos privilégios ao executar o seguinte comando:
+FLUSH PRIVILEGES;
