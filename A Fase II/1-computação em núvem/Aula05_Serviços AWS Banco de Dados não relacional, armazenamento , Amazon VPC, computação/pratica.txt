@@ -1,0 +1,15 @@
+{
+“Artista” : “No One You Know”,
+“Genero”: “Country”,
+“Preco”: 1.98,
+“Titulo da musica” : “Call Me Today”,
+“Título do Album”: ”Hey Now”
+}
+{
+“Ano” : 1984,
+“Artista” : “No One You Know”,
+“Genero”: “Country”,
+“Titulo da musica” : “Somwhere Down The Road”,
+“Título do Album”: “Somewhat Famous”
+}
+
