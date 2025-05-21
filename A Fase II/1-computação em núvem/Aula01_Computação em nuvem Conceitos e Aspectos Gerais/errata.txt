@@ -1,0 +1,15 @@
+ERRATA
+tema 2 – modelos de serviços
+
+Em 2.2 Plataform como serviço
+EC2 não é um exemplo de PaaS.
+EC2 é um exemplo de IaaS
+A AWS considera a seguinte definição para categorizar EC2 como IaaS:
+IaaS : Você gerencia o servidor, que pode ser físico ou virtual, bem como o sistema operacional (Windows ou Linux). De modo geral, o provedor de datacenter não tem acesso ao seu servidor.
+
+Em 2.3 Infraestrutura como serviço (IaaS)
+A AWS fornece serviços para todos os 3 modelos de serviços: IASS, SAAS e PASS e não somente para IASS, como o exemplo em 2.3 Infraestrutura como serviço (IaaS) parece sugerir.
+
+
+No Vídeo do Tema 3, no minuto 4:50'. Os beneficios citados são apenas se a nuvem privada for por meio de um provedor de serviço, como AWS por exemplo.
+No Vídeo do Tema 3, no minuto 5' em diante. Em benefícios da nuvem privada fala-se que tem maior risco de privacidade de dados, o correto seria MENOR risco de privacidade.
