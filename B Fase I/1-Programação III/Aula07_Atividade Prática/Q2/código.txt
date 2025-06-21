@@ -1,0 +1,74 @@
+# Classe que representa cada estado como um nodo da lista
+class Estado:
+    def __init__(self, sigla, nome):
+        self.sigla = sigla
+        self.nome = nome
+        self.prox = None
+
+# Classe que representa a tabela hash com 10 posiçoes
+class TabelaHash:
+    def __init__(self):
+        self.tabela = [None] * 10
+
+    # Função hash, com regra especial para DF
+    def funcaoHash(self, sigla):
+        if sigla == "DF":
+            return 7
+        else:
+            c1 = ord(sigla[0])
+            c2 = ord(sigla[1])
+            return (c1 + c2) % 10
+
+    # Inserir estado no início da lista encadeada
+    def inserir(self, sigla, nome):
+        pos = self.funcaoHash(sigla)
+        novo = Estado(sigla, nome)
+        novo.prox = self.tabela[pos]
+        self.tabela[pos] = novo
+
+    # Imprimir a tabela hash
+    def imprimir(self):
+        print("== TABELA HASH ==")
+        for i in range(10):
+            print(f"Posição {i}: ", end="")
+            atual = self.tabela[i]
+            while atual:
+                print(f"{atual.sigla}", end=" -> ")
+                atual = atual.prox
+            print("None")
+
+# ====== PROGRAMA PRINCIPAL COM TESTES ======
+if __name__ == "__main__":
+    tabela = TabelaHash()
+
+    # Imprimir tabela vazia
+    print("Tabela antes de inserir qualquer estado:")
+    tabela.imprimir()
+    print()
+
+    # Lista com os 27 estados (nome + sigla)
+    estados = [
+        ("AC", "Acre"), ("AL", "Alagoas"), ("AP", "Amapá"), ("AM", "Amazonas"),
+        ("BA", "Bahia"), ("CE", "Ceará"), ("DF", "Distrito Federal"), ("ES", "Espírito Santo"),
+        ("GO", "Goiás"), ("MA", "Maranhão"), ("MT", "Mato Grosso"), ("MS", "Mato Grosso do Sul"),
+        ("MG", "Minas Gerais"), ("PA", "Pará"), ("PB", "Paraíba"), ("PR", "Paraná"),
+        ("PE", "Pernambuco"), ("PI", "Piauí"), ("RJ", "Rio de Janeiro"), ("RN", "Rio Grande do Norte"),
+        ("RS", "Rio Grande do Sul"), ("RO", "Rondônia"), ("RR", "Roraima"), ("SC", "Santa Catarina"),
+        ("SP", "São Paulo"), ("SE", "Sergipe"), ("TO", "Tocantins")
+    ]
+
+    # Inserindo os 26 estados + DF
+    for sigla, nome in estados:
+        tabela.inserir(sigla, nome)
+
+    #Imprimi tabela após inserir 27 estados
+    print("Tabela após inserir os 26 estados + DF:")
+    tabela.imprimir()
+    print()
+
+    # Inserindo estado fictício com nome: Carlos Henrique Monnerat Quintanilha => CQ
+    tabela.inserir("CQ", "Carlos Henrique Monnerat Quintanilha")
+
+    # Imprimir tabela após inserir estado fictício
+    print("Tabela após inserir o estado fictício: CQ")
+    tabela.imprimir()
