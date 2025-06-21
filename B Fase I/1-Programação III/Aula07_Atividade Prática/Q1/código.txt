@@ -1,0 +1,105 @@
+# Classe que representa um paciente na fila
+class Paciente:
+    def __init__(self, numero, cor):
+        self.numero = numero  # número do cartão do paciente
+        self.cor = cor        # cor do cartão (A(amarelo) ou V(verde))
+        self.prox = None      # próximo paciente na fila
+
+# Classe da fila de pacientes (lista encadeada simples)
+class FilaHospital:
+    def __init__(self):
+        self.inicio = None  # cabeca da lista
+        self.contadorV = 1  # começa numeração dos verdes em 1
+        self.contadorA = 201  # começa numeração dos amarelos em 201
+
+    # insere paciente no final da fila (sem prioridade)
+    def adicionarNoFinal(self, novo):
+        if self.inicio == None:
+            self.inicio = novo  # se não tem ninguém, ele é o primeiro
+        else:
+            atual = self.inicio
+            while atual.prox != None:
+                atual = atual.prox
+            atual.prox = novo  # coloca no final da fila
+
+    # insere paciente com prioridade (depois dos amarelos, antes dos verdes)
+    def adicionarComPrioridade(self, novo):
+        if self.inicio == None or self.inicio.cor == "V":
+            novo.prox = self.inicio
+            self.inicio = novo
+        else:
+            atual = self.inicio
+            while atual.prox != None and atual.prox.cor == "A":
+                atual = atual.prox
+            novo.prox = atual.prox
+            atual.prox = novo
+
+    # função para adicionar paciente, perguntando a cor e atribuindo número automaticamente
+    def adicionarPaciente(self):
+        cor = input("Digite a cor do cartão (A (amarelo) ou V (verde)): ").upper()
+        if cor == "V":
+            numero = self.contadorV
+            self.contadorV += 1
+        elif cor == "A":
+            numero = self.contadorA
+            self.contadorA += 1
+        else:
+            print("Cor inválida! Digite A ou V.")
+            return
+
+        novo = Paciente(numero, cor)
+
+        if self.inicio == None:
+            self.inicio = novo  # se a fila estiver vazia
+        elif cor == "V":
+            self.adicionarNoFinal(novo)
+        elif cor == "A":
+            self.adicionarComPrioridade(novo)
+
+        print("Paciente adicionado com cartão", cor + str(numero))
+
+    # Mostra todos os pacientes da fila
+    def mostrarFila(self):
+        if self.inicio == None:
+            print("A fila está vazia!")
+        else:
+            atual = self.inicio
+            print("Fila de espera:")
+            while atual != None:
+                print("Cartão:", atual.cor + str(atual.numero))
+                atual = atual.prox
+
+    # chama o proximo paciente da fila (o primeiro)
+    def chamarPaciente(self):
+        if self.inicio == None:
+            print("Nenhum paciente na fila.")
+        else:
+            print("Chamando paciente com cartão", self.inicio.cor + str(self.inicio.numero))
+            self.inicio = self.inicio.prox  # remove o primeiro da fila
+
+    # menu com opções para o usuário
+    def menu(self):
+        while True:
+            print("\n===== MENU =====")
+            print("1 - Adicionar paciente")
+            print("2 - Mostrar fila")
+            print("3 - Chamar paciente")
+            print("4 - Sair")
+            op = input("Escolha uma opção: ")
+
+            if op == "1":
+                self.adicionarPaciente()
+            elif op == "2":
+                self.mostrarFila()
+            elif op == "3":
+                self.chamarPaciente()
+            elif op == "4":
+                print("Saindo do sistema...")
+                break
+            else:
+                print("Opção errada, digite de novo!")
+
+# Parte que roda o sistema
+if __name__ == "__main__":
+    sistema = FilaHospital()
+    sistema.menu()
